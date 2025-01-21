@@ -342,6 +342,7 @@ export class EventSystem implements ISystem<EventSystemOptions>
      */
     private onPointerDown(nativeEvent: MouseEvent | PointerEvent | TouchEvent): void
     {
+        console.log('onPointerDown');
         if (!this.features.click) return;
         this.rootBoundary.rootTarget = this.renderer.lastObjectRendered as DisplayObject;
 
